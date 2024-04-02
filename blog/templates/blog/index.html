@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    MY BLOG
+{% endblock%}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}"/>
+{% endblock %}
+
+{% block content %}
+    <header id="main-navigation">
+        <h1><a href="">Steve's Blog</a></h1>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </header>
+    <h1>Welcome to my Blog</h1>
+
+
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/max.png" %}" alt="Steve - The Creator of this Blog"/>
+            <h2>STEVE'S BLOG</h2>
+        </header>
+        <p>Hi, I am Stevenson, and this blog is about the tech world!</p>
+    </section>
+
+
+    <section id="latest-posts">
+        <h2>My Latest Thoughts</h2>
+
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountain Hiking"/>
+                        <div class="post_content">
+                            <h3>Mountain Hiking</h3>
+                            <p>What the fuck are you doing whatihohtih
+                                idhidhdihdhdidhdihdihdhdihdi dhidhdidhid dhidh
+                                 dihd idhidhdihdhdidhdihdihdhdihdidhidhidhdi
+                                diudihdidddhidhidhidhidhdhdhidhidhidhidh
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="about">
+        <h2>What I Do</h2>
+        <p>
+            I love programming. I love to help others and that is why I am a part time.
+            Also, I enjoy playing basketball to a greater extent
+        </p>
+        <p>
+            My goal is to always keep growing. The day I will die, would be the day my brain
+            becomes unfunctional. Guess what, I am still very young. 
+        </p>
+
+    </section>
+
+
+
+
+    
+{% endblock %}
